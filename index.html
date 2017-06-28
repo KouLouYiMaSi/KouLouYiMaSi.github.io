@@ -163,7 +163,7 @@
     <span class="btn-bar"></span>
   </button>
 </div>
-
+        <button onclick="insert()"></button>
 <nav class="site-nav">
   
 
@@ -704,6 +704,20 @@
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
+  function insert(){
+  var GameScore = Bmob.Object.extend("GameScore");
+    var gameScore = new GameScore();
+    gameScore.set("score", 1337);
+    gameScore.save(null, {
+      success: function(object) {
+        alert("create object success, object id:"+object.id);
+      },
+      error: function(model, error) {
+        alert("create object fail");
+      }
+    });
+  }
+  
 </script>
 
 
@@ -755,6 +769,7 @@
 
 
   <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+  <script type="text/javascript" src="/js/src/bmob-min.js"></script>
 
 
 
