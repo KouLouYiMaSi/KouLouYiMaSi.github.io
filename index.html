@@ -705,6 +705,7 @@
     window.Promise = null;
   }
   function insert(){
+    Bmob.initialize("你的Application ID", "你的REST API Key");
   var GameScore = Bmob.Object.extend("GameScore");
     var gameScore = new GameScore();
     gameScore.set("score", 1337);
