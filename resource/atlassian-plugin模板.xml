@@ -1,0 +1,23 @@
+<!--Atlassian插件描述文件-->
+<atlassian-plugin key="com.netease.openid" name="Opendid" plugins-version="2"><!--key标识插件在系统里的唯一性，name是插件在系统里显示的名称-->
+  <plugin-info><!--插件信息-->
+    <description><!--描述这个插件是做什么用的-->
+      这是一个openid插件
+    </description>
+    <version>1.0</version><!--当前插件的版本-->
+    <application-version min="1.3" max="1.3"/><!--插件兼容的系统版本，可无-->
+    <vendor name="网易乐得" url="netease.com"/><!--插件的开发组织-->
+    <param name="configure.url">/admin/plugins/example/configurePlugin.action</param><!--插件的请求地址，param可以配置不同的参数，可无-->   
+    <bundle-instructions><!--插件的导入导出信息，可无-->
+      <Export-Package>my.external.pkg</Export-Package><!--插件向外暴露的服务-->
+      <Import-Package>com.mylibrary,*;resolution:=optional</Import-Package><!--插件导入的相关包，可无-->
+    </bundle-instructions>
+  </plugin-info>
+  <!--这个标签用于国际化-->
+  <resource type="i18n" name="i18n" location="huohuo"/>
+  <!-- 每个插件有很多的module组成，下面可以配置插件的module-->
+  <!-- 每一个插件都有自己的key、名字和一个实现类 -->
+  <examplemodule key="module1" name="Example Module" class="com.atlassian.confluence.plugins.example.ExampleModule">
+    <description>An example module</description>
+  </examplemodule>
+</atlassian-plugin>
