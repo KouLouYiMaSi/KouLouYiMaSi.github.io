@@ -1,0 +1,67 @@
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<link href="../css/bootstrap-datetimepicker.css" rel="stylesheet">
+		<link href="../css/bootstrap-select.css" rel="stylesheet">
+		<link href="../css/bootstrap-theme.css" rel="stylesheet">
+		<link href="../css/buttons.css" rel="stylesheet">
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/bootbox.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../js/bmob-min.js"></script>
+		<script src="../js/edit.js" charset="gbk"></script>
+	</head>
+	<body>
+	<div class="row-fluid">
+	    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">ImportNew</span> HuoHuo
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="article.html">文章</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="edit.html">编辑</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	</div>
+	<br><br><br><br><br>
+		<div class="row-fluid">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">		
+				<label class="">文章标题：</label>
+				<input type="title" class="form-control" id="title" placeholder="输入文章标题">
+				<br>
+				<label class="">文章内容：</label>
+				<textarea rows="30" id="content" class="form-control" placeholder="请输入文章内容"></textarea>
+				<br>
+				<button class="btn btn-large btn-block btn-primary" id="saveArticle" type="button">保存文章</button>
+			<div class="col-md-3"></div>
+		</div>
+	</body>
+	
+</html>

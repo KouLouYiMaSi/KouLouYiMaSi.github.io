@@ -2,21 +2,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
-		<link href="css/bootstrap-select.css" rel="stylesheet">
-		<link href="css/bootstrap-theme.css" rel="stylesheet">
-		<link href="css/buttons.css" rel="stylesheet">
-		<link href="css/grayscale.css" rel="stylesheet">  
-		<script src="js/jquery-1.11.3.js"></script>
-		<script src="js/bootbox.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/bootstrap-datetimepicker.js"></script>
-		    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-		<!-- Custom Theme JavaScript -->
-		<script src="js/grayscale.js"></script>
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<link href="../css/bootstrap-datetimepicker.css" rel="stylesheet">
+		<link href="../css/bootstrap-select.css" rel="stylesheet">
+		<link href="../css/bootstrap-theme.css" rel="stylesheet">
+		<link href="../css/buttons.css" rel="stylesheet">
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/bootbox.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../js/article.js" charset="gbk"></script>
+		<script src="../js/bmob-min.js"></script>
 	</head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
@@ -39,13 +34,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">首页</a>
+                        <a href="../index.html">首页</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="html/article.html">文章</a>
+                        <a href="article.html">文章</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="html/edit.html">编辑</a>
+                        <a href="edit.html">编辑</a>
                     </li>
                 </ul>
             </div>
@@ -54,18 +49,23 @@
         <!-- /.container -->
     </nav>
 
-    <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">ImportNew</h1>
-                        <p class="intro-text">You Wanna Be A Better Man? Import New EveryDay！</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<br><br><br><br><br>
+	<div class="row-fluid">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<table class="table table-striped">
+				<thead>
+					<tr id="ahead" hidden="true">
+						<th>序号</th>
+						<th>文章名称</th>
+					</tr>
+				</thead>
+				<tbody id="articleList">
+				</tbody>	
+				</table>
+			</div>	
+			<div class="col-md-3"></div>
+	</div>
 </body>
 	
 </html>
