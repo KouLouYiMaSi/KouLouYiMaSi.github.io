@@ -7,7 +7,7 @@ $(function(){
 				var str="";
 				for (var i = 1; i < results.length; i++) {
 					str += "<tr><td>"+i+"</td>"+"<td>"+results[i].get("title")+"</td>"
-					+"<td>"+new Date(results[i].get("updatedAt")).Format("yyyy-MM-dd HH:mm:ss")+"</td>"
+					+"<td>"+results[i].updatedAt+"</td>"
 					"</tr>";
 				}
 				$("#ahead").attr("hidden",false);
