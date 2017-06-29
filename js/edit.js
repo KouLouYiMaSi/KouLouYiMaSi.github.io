@@ -9,10 +9,10 @@ $(function(){
 		article.set("content",content);
 		article.save(null, {
 			success: function(article) {
-			bootbox.alert("Congratulations！Success！:" + article.id);
+			bootbox.alert("保存成功:");
 			},
 			error: function(article, error) {
-			bootbox.alert("SomeThing went wrong！："+ error.description);
+			bootbox.alert("保存失败："+ error.description);
 			}
 		});
 	});
