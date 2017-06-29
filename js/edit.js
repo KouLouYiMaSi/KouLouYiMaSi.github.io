@@ -9,10 +9,10 @@ $(function(){
 		article.set("content",content);
 		article.save(null, {
 			success: function(article) {
-			bootbox.alert("Ìí¼ÓÊı¾İ³É¹¦£¬·µ»ØµÄobjectIdÊÇ:" + article.id);
+			bootbox.alert("Congratulationsï¼Successï¼:" + article.id);
 			},
 			error: function(article, error) {
-			bootbox.alert("Ìí¼ÓÊı¾İÊ§°Ü£¬·µ»Ø´íÎóĞÅÏ¢£º"+ error.description);
+			bootbox.alert("SomeThing went wrongï¼ï¼š"+ error.description);
 			}
 		});
 	});
