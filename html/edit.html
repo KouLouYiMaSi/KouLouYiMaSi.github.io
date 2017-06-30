@@ -12,8 +12,7 @@
 		<script src="../js/grayscale.js"></script>
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-	<div class="row-fluid">
-	    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -47,19 +46,26 @@
         <!-- /.container -->
     </nav>
 	</div>
-	<br><br><br><br><br>
-		<div class="row-fluid">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">		
-				<label class="">文章标题：</label>
+	
+	
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                      		<label class="">文章标题：</label>
 				<input type="title" class="form-control" id="title" placeholder="输入文章标题">
 				<br>
 				<label class="">文章内容：</label>
 				<textarea rows="30" id="content" class="form-control" placeholder="请输入文章内容"></textarea>
 				<br>
 				<button class="btn btn-large btn-block btn-primary" id="saveArticle" type="button">保存文章</button>
-			<div class="col-md-3"></div>
-		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 	</body>
 	
 </html>
