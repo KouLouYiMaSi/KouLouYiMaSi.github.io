@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>扫到什么,评论什么</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+
+<script src="clipboard.min.js"></script>
+
+<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+<style>
+body{
+	background: #eaeaea;
+}
+main{
+	width: 100%;
+	height: 30rem;
+}
+.contents{
+	padding: 15rem 0;
+}
+#content-desc{
+	width: 85%;
+	margin: -102px auto;
+	font-family: KaiTi;
+	//font-size: 19px;
+}
+footer{
+	width: 100%;
+}
+ul{
+	width: 70%;
+	margin: -80px 5%;
+}
+li{
+	list-style: none;
+	width: 90%;
+	height: 2rem;
+	text-align: center;
+	margin-top: 10px;
+	border: 1.9px solid black;
+	border-radius:8px;
+	margin: 10px auto;
+	line-height: 2rem;
+	font-size: 1rem;
+	font-family: KaiTi;
+	cursor: pointer;
+	font-weight: bold;
+
+}
+
+    #content-desc span{
+        float:left;
+        position: relative;
+    }
+
+    #content-desc span:nth-child(1){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    #content-desc span:nth-child(2){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    #content-desc span:nth-child(3){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+    #content-desc span:nth-child(4){
+        -webkit-animation:jump 1s linear 0.6s infinite alternate;
+    }
+
+    #content-desc span:nth-child(5){
+        -webkit-animation:jump 1s linear 0.8s infinite alternate;
+    }
+    #content-desc span:nth-child(6){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    #content-desc span:nth-child(7){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    #content-desc span:nth-child(8){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+    #content-desc span:nth-child(9){
+        -webkit-animation:jump 1s linear 0.6s infinite alternate;
+    }
+
+    #content-desc span:nth-child(10){
+        -webkit-animation:jump 1s linear 0.8s infinite alternate;
+    }
+    #content-desc span:nth-child(11){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    #content-desc span:nth-child(12){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    #content-desc span:nth-child(13){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+    #content-desc span:nth-child(14){
+        -webkit-animation:jump 1s linear 0.6s infinite alternate;
+    }
+
+    #content-desc span:nth-child(15){
+        -webkit-animation:jump 1s linear 0.8s infinite alternate;
+    }
+    #content-desc span:nth-child(16){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    #content-desc span:nth-child(17){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    #content-desc span:nth-child(18){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+    #content-desc span:nth-child(19){
+        -webkit-animation:jump 1s linear 0.6s infinite alternate;
+    }
+
+    #content-desc span:nth-child(20){
+        -webkit-animation:jump 1s linear 0.8s infinite alternate;
+    }
+    #content-desc span:nth-child(21){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    #content-desc span:nth-child(22){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    #content-desc span:nth-child(23){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+    #content-desc span:nth-child(24){
+        -webkit-animation:jump 1s linear 0.6s infinite alternate;
+    }
+
+    #content-desc span:nth-child(25){
+        -webkit-animation:jump 1s linear 0.8s infinite alternate;
+    }
+    #content-desc span:nth-child(26){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    #content-desc span:nth-child(27){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    #content-desc span:nth-child(28){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+    #content-desc span:nth-child(29){
+        -webkit-animation:jump 1s linear 0.6s infinite alternate;
+    }
+
+    #content-desc span:nth-child(30){
+        -webkit-animation:jump 1s linear 0.8s infinite alternate;
+    }
+    #content-desc span:nth-child(31){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    #content-desc span:nth-child(32){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    #content-desc span:nth-child(33){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+	 #content-desc span:nth-child(34){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+    #content-desc span:nth-child(35){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+    #content-desc span:nth-child(36){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+    #content-desc span:nth-child(37){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+    #content-desc span:nth-child(38){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+    #content-desc span:nth-child(39){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+
+
+    @-webkit-keyframes jump
+    {
+        0%{
+            top:0px;
+            color:#fbb2b2;
+        }
+        50%{
+            top:-3px;
+            color:#0e8761;
+        }
+        100%{
+            top:2px;
+            color:#327fc2;
+        }
+    }
+
+	</style>
+
+<meta name="GENERATOR" content="MSHTML 9.00.8112.16723"></head>
+<body>
+<main>
+	<article class="contents">
+		<div id="content-desc">我暗恋你很久了</div>
+	</article>
+</main>
+<footer>
+<nav>
+<ul>
+  <li class="btn">				点击复制这句话			</li>
+  <li class="jump">							我也要玩						</li>
+</ul>
+</nav>
+<input class="weburl" value="http://mp.weixin.qq.com/s/-VEGDjK0u7YBWPTpYt1q-Q" type="hidden">
+</footer>
+<script type="text/javascript">
+
+var rand1 = parseInt(Math.random()*40);
+quotes = new Array;
+quotes[0] ='我暗恋你很久了';
+
+var quote = quotes[rand1];
+$("#content-desc").html(quote);
+
+
+</script>
+<script>
+    var clipboard = new Clipboard('.btn', {
+        text: function() {
+            return $("#content-desc").text();
+        }
+    });
+
+    clipboard.on('success', function(e) {
+        alert("复制成功");
+    });
+
+    clipboard.on('error', function(e) {
+        alert("复制失败");
+    });
+    $(".jump").click(function(){
+    	window.location.href=$(".weburl").val();
+    })
+    </script>
+
+<div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png&quot;);"></div></div></body></html>
